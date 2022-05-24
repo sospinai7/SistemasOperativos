@@ -1,0 +1,82 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+    line-height: 1.5
+}
+
+h1, h2, h3, h4 {
+    margin: 1em 0 .5em;
+    line-height: 1.25;
+    color: red
+}
+
+h1 {
+    font-size: 2em
+}
+
+h2 {
+    font-size: 1.5em
+}
+
+h3 {
+    font-size: 1.2em
+}
+
+ul, ol {
+    margin: 1em 0;
+    padding-left: 40px
+}
+
+p, figure {
+    margin: 1em 0
+}
+
+a img {
+    border: none
+}
+
+sup, sub {
+    line-height: 0
+}
+
+.box {
+    border: 5px solid rgb(50, 48, 52);
+    background-color: rgb(223, 217, 217);
+    padding: auto;
+    margin: 1% auto;
+    width: 300px;
+    height: auto;
+    /* display: flex; */
+    justify-content: center;
+}
+
+.nombre {
+    /* background-color: green; */
+    display: flex;
+    float: left;
+    padding: auto;
+    margin: auto;
+}
+
+.contenido {
+    display: flex;
+    /* background-color: red; */
+    margin: 0;
+    padding: 0;
+}
+
+.application {
+    float: right;
+    display: flex;
+    justify-content: center;
+    /* background-color: blue; */
+}
+
+.botones {
+    padding: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    /* background-color: yellow; */
+}

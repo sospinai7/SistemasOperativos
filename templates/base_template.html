@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+    <html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}{% endblock %}</title>
+        <link rel="stylesheet" href="{{ url_for("static", filename="base.css") }}">
+    </head>
+    <body>
+        <div class="box">
+            <div class="contenido">
+                <div class="nombre">{% block application1 %}{% endblock %}</div>
+                <div class="botones">
+                    <input class="application" type="button" value="open">
+                    <input class="application" type="button" value="close">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="contenido">
+                <div class="nombre">{% block application2 %}{% endblock %}</div>
+                <div class="botones">
+                    <input class="application" type="button" value="open">
+                    <input class="application" type="button" value="close">
+                </div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="contenido">
+                <div class="nombre" style="padding: 0 7%">{% block application3 %}{% endblock %}</div>
+                <div class="botones">
+                    <form action="{{ url_for('app3_open') }}"><input class="application" type="submit" value="open"></form>
+                    <form action="{{ url_for('app3_close') }}"><input class="application" type="submit" value="close"></form>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
