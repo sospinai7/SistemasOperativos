@@ -10,27 +10,63 @@
             <div class="contenido">
                 <div class="nombre">{% block application1 %}{% endblock %}</div>
                 <div class="botones">
-                    <input class="application" type="button" value="open">
-                    <input class="application" type="button" value="close">
+                    <input 
+                        class="application" 
+                        type="submit" 
+                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "calc", number = 1) }}'" 
+                        value="open" 
+                        name="open_app1" 
+                    >  
+                    <input 
+                        class="application" 
+                        type="submit" 
+                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "calc", number = 2) }}'" 
+                        value="close" 
+                        name="close_app1"
+                    >
                 </div>
             </div>
         </div>
         <div class="box">
             <div class="contenido">
-                <div class="nombre">{% block application2 %}{% endblock %}</div>
+                <div class="nombre" style="padding: 0 7%">{% block application2 %}{% endblock %}</div>
                 <div class="botones">
-                    <input class="application" type="button" value="open">
-                    <input class="application" type="button" value="close">
+                    <input 
+                        class="application" 
+                        type="submit" 
+                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "paint", number = 1) }}'" 
+                        value="open" 
+                        name="open_app2" 
+                    >  
+                    <input 
+                        class="application" 
+                        type="submit" 
+                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "paint", number = 2) }}'" 
+                        value="close" 
+                        name="close_app2"
+                    >
                 </div>
             </div>
         </div>
         <div class="box">
             <div class="contenido">
-                <div class="nombre" style="padding: 0 7%">{% block application3 %}{% endblock %}</div>
+                <div class="nombre" style="padding: 0 6.5%">{% block application3 %}{% endblock %}</div>
                 <div class="botones">
-                    <form action="{{ url_for('app3_open') }}"><input class="application" type="submit" value="open"></form>
-                    <form action="{{ url_for('app3_close') }}"><input class="application" type="submit" value="close"></form>
-                </div>
+                    <input 
+                        class="application" 
+                        type="submit" 
+                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "notepad", number = 1) }}'" 
+                        value="open" 
+                        name="open_app3" 
+                    >  
+                    <input 
+                        class="application" 
+                        type="submit" 
+                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "notepad", number = 2) }}'" 
+                        value="close" 
+                        name="close_app3"
+                    >
+                </div> 
             </div>
         </div>
     </body>
