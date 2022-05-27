@@ -1,0 +1,6 @@
+Gestor de archivos
+[26/5/2022 - 19:4:47] open calc
+[26/5/2022 - 19:4:51] open calc
+[26/5/2022 - 19:4:53] open calc
+[26/5/2022 - 19:5:3] close calc
+[26/5/2022 - 19:5:4] close calc
