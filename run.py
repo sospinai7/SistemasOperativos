@@ -1,10 +1,13 @@
+from email.mime import application
 from flask import Flask, render_template
 import sys, os
 
 from kernel import kernel
+from application import application
 
 app = Flask(__name__)
 app.register_blueprint(kernel, url_prefix='/kernel')
+app.register_blueprint(application, url_prefix='/application')
 
 posts = []
 

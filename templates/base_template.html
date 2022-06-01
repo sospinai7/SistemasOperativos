@@ -13,14 +13,14 @@
                     <input 
                         class="application" 
                         type="submit" 
-                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "calc", number = 1) }}'" 
+                        onclick="window.location.href='{{ url_for('application.controller', app = "calc", state = 'open') }}'" 
                         value="open" 
                         name="open_app1" 
                     >  
                     <input 
                         class="application" 
                         type="submit" 
-                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "calc", number = 2) }}'" 
+                        onclick="window.location.href='{{ url_for('application.controller', app = "calc", state = 'close') }}'" 
                         value="close" 
                         name="close_app1"
                     >
@@ -34,14 +34,14 @@
                     <input 
                         class="application" 
                         type="submit" 
-                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "paint", number = 1) }}'" 
+                        onclick="window.location.href='{{ url_for('application.controller', app = "paint", state = 'open') }}'" 
                         value="open" 
                         name="open_app2" 
                     >  
                     <input 
                         class="application" 
                         type="submit" 
-                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "paint", number = 2) }}'" 
+                        onclick="window.location.href='{{ url_for('application.controller', app = "paint", state = 'close') }}'" 
                         value="close" 
                         name="close_app2"
                     >
@@ -55,14 +55,14 @@
                     <input 
                         class="application" 
                         type="submit" 
-                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "notepad", number = 1) }}'" 
+                        onclick="window.location.href='{{ url_for('application.controller', app = "notepad", state = 'open') }}'" 
                         value="open" 
                         name="open_app3" 
                     >  
                     <input 
                         class="application" 
                         type="submit" 
-                        onclick="window.location.href='{{ url_for('kernel.open_app', slug = "notepad", number = 2) }}'" 
+                        onclick="window.location.href='{{ url_for('application.controller', app = "notepad", state = 'close') }}'" 
                         value="close" 
                         name="close_app3"
                     >
