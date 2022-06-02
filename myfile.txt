@@ -1,1 +1,12 @@
 Gestor de archivos
+[2/6/2022 - 6:52:18] [user] (calc): Abrir!
+[2/6/2022 - 6:52:18] [kernel] (calc): Abriendo!
+[2/6/2022 - 6:52:18] [app] (calc): ERROR
+[2/6/2022 - 6:53:44] [user] (paint): Abrir!
+[2/6/2022 - 6:53:44] [kernel] (paint): Abriendo!
+[2/6/2022 - 6:53:44] [app] (paint): OK!
+[2/6/2022 - 6:53:44] [app] (paint): Abrio!
+[2/6/2022 - 6:53:49] [user] (paint): Cerrar!
+[2/6/2022 - 6:53:49] [kernel] (paint): Cerrando!
+[2/6/2022 - 6:53:49] [app] (paint): OK!
+[2/6/2022 - 6:53:49] [app] (paint): Cerro!

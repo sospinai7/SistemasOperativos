@@ -38,7 +38,7 @@ def create_txt(log):
     with open('myfile.txt', 'w') as fp:
         fp.write(log)
         # fp.close()
-        pass
+        pass 
 
 def txt_file():
     for file in listOfFiles:
